@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#87c7e8">
+  <title>A Little Thing For You</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="cloudLayer" class="cloud-layer" aria-hidden="true">
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+    <div class="cloud cloud-4"></div>
+  </div>
+
+  <div class="paper-plane" aria-hidden="true">✈</div>
+
+  <button id="musicButton" class="music-button" aria-label="Play music">
+    <span class="music-icon">♪</span>
+    <span id="musicText">play our song</span>
+  </button>
+
+  <audio id="bgMusic" loop preload="auto">
+    <source src="assets/song.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <!-- 01 OPENING -->
+    <section id="opening" class="section hero-section">
+      <div class="hero-content reveal">
+        <p class="tiny-label">a little message from me</p>
+
+        <h1>Hey...</h1>
+
+        <p class="hero-copy">
+          I made this little thing for you.<br>
+          So... please read it until the end.
+        </p>
+
+        <button id="openButton" class="main-button">
+          <span>open this</span>
+          <span>→</span>
+        </button>
+      </div>
+
+      <div class="scroll-hint">scroll gently</div>
+    </section>
+
+    <!-- 02 ABOUT YESTERDAY -->
+    <section class="section paper-section">
+      <div class="paper-card reveal">
+        <p class="section-number">01</p>
+        <h2>About yesterday...</h2>
+
+        <p>
+          Kemarin sebenarnya aku lagi nggak baik-baik aja.
+        </p>
+
+        <p>
+          Ada masalah keluarga yang cukup besar dan jujur, mood dan pikiranku
+          lagi berantakan banget saat itu.
+        </p>
+
+        <p>
+          Jadi ketika kejadian itu terjadi, aku mungkin bereaksi lebih
+          emosional daripada yang seharusnya.
+        </p>
+
+        <div class="paper-line"></div>
+        <p class="handwritten">I was overwhelmed. That's all.</p>
+      </div>
+    </section>
+
+    <!-- 03 WHAT I SHOULD HAVE DONE -->
+    <section class="section clean-section">
+      <div class="content-block reveal">
+        <p class="section-number">02</p>
+        <h2>I know I could've<br>handled it better.</h2>
+
+        <div class="mistakes">
+          <p>Harusnya aku ngomong baik-baik pas itu.</p>
+          <p>Harusnya aku nggak langsung matiin call.</p>
+          <p>
+            Dan yang paling aku sesali adalah setelah kamu minta maaf,
+            aku malah cuma read chat-nya.
+          </p>
+        </div>
+
+        <div class="sorry-note">
+          <span>That was wrong of me.</span>
+          <strong>I'm sorry.</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 HER MESSAGE -->
+    <section class="section message-section">
+      <div class="message-wrapper reveal">
+        <p class="section-number">03</p>
+        <h2>About your message</h2>
+
+        <div class="chat-area">
+          <div class="chat-label">Her</div>
+          <div class="chat-bubble her-bubble">
+            maaf sayangku
+          </div>
+
+          <div class="chat-label me-label">Me</div>
+          <div class="chat-bubble me-bubble">
+            Aku emang nggak langsung ngebales itu.
+            Tapi itu bukan berarti aku nggak menghargai chat dari kamu.
+            Saat itu aku cuma belum tahu harus merespons apa karena pikiranku
+            lagi benar-benar penuh kemarin.
+          </div>
+        </div>
+
+        <p class="typing-note" id="typingNote">
+          I read it. I just didn't know what to say.
+        </p>
+      </div>
+    </section>
+
+    <!-- 05 SOMETHING I WANT YOU TO KNOW -->
+    <section class="section know-section">
+      <div class="content-block reveal">
+        <p class="section-number">04</p>
+        <h2>There's something<br>I want you to know.</h2>
+
+        <div class="letter-text">
+          <p>
+            Aku juga baru tahu kalau ternyata kamu kesal karena aku lama banget
+            ngebales chat kamu pas aku lagi kerkom.
+          </p>
+
+          <p>
+            Aku minta maaf kalau itu ngebuat kamu ngerasa aku ngabaikan kamu.
+          </p>
+
+          <p>
+            Aku nggak bermaksud kayak gitu.
+          </p>
+        </div>
+
+        <div class="quote">
+          <span>Being busy</span>
+          <em>doesn't mean</em>
+          <span>I don't care.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 NOT ASKING -->
+    <section class="section not-asking-section">
+      <div class="paper-card narrow-card reveal">
+        <p class="section-number">05</p>
+        <h2>I'm not asking you to...</h2>
+
+        <p>
+          Aku nggak bikin ini supaya kamu langsung nggak marah.
+        </p>
+
+        <p>
+          Aku juga nggak mau maksa kamu buat langsung maafin aku.
+        </p>
+
+        <p>
+          Aku cuma pengen kamu tahu apa yang sebenarnya terjadi dari sisi aku,
+          dan aku pengen minta maaf ke kamu dengan cara yang benar.
+        </p>
+
+        <p class="take-time">Take your time.</p>
+      </div>
+    </section>
+
+    <!-- 07 PHOTO -->
+    <section class="section photo-section">
+      <div class="photo-content reveal">
+        <p class="tiny-label">before you go...</p>
+
+        <div class="polaroid">
+          <div class="photo-frame">
+            <img src="assets/photo.jpg" alt="A photo for you">
+          </div>
+          <p>one last thing.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 FINAL -->
+    <section class="section final-section">
+      <div class="final-content reveal">
+        <p class="tiny-label">one last message</p>
+
+        <h2>I'M REALLY<br>SORRY, BEBII</h2>
+
+        <p>
+          Makasih ya... karena masih mau baca sampai sini.
+        </p>
+
+        <p>
+          Aku sayang banget sama kamu, dan aku nggak mau masalah kecil maupun
+          keadaan buruk yang lagi aku alami bikin kita saling menjauh.
+        </p>
+
+        <button id="forgiveButton" class="forgive-button">
+          forgive me?
+        </button>
+      </div>
+    </section>
+
+    <!-- 09 THANK YOU -->
+    <section id="thankYou" class="section thank-you-section">
+      <div class="thank-you-content">
+        <p class="tiny-label">thank you</p>
+        <h2>Thank you for<br>staying, bebeee.</h2>
+        <p class="handwritten final-handwritten">
+          I'll try to handle things better next time.
+        </p>
+
+        <div class="final-photos">
+          <div class="small-photo">
+            <img src="assets/photo.jpg" alt="A photo of me">
+          </div>
+          <div class="small-photo childhood-photo">
+            <img src="assets/photo2.jpg" alt="A childhood photo of me">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="transition" class="transition-screen"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
